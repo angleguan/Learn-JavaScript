@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../semantic.min.css">
+
+</head>
+<body>
+<div class="ui stackable  menu">
+    <div class="ui container">
+        <a href="#" class="header item">
+            Learn JavaScript
+        </a>
+        <a href="#" class="item">Home</a>
+        <div class="ui simple dropdown item">
+            Dropdown <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="#">Link Item</a>
+                <a class="item" href="#">Link Item</a>
+                <div class="divider"></div>
+                <div class="header">Header Item</div>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    Sub Menu
+                    <div class="menu">
+                        <a class="item" href="#">Link Item</a>
+                        <a class="item" href="#">Link Item</a>
+                    </div>
+                </div>
+                <a class="item" href="#">Link Item</a>
+
+            </div>
+
+        </div>
+        <div class="right menu">
+            <div class="ui basic animated button" tabindex="0">
+                <div class="visible content">Back</div>
+                <div class="hidden content">
+                    <i class="left chevron icon"></i>
+                </div>
+            </div>
+            <div class="ui basic animated button" tabindex="0">
+                <div class="visible content">Next</div>
+                <div class="hidden content">
+                    <i class="right arrow icon"></i>
+                </div>
+            </div>
+        </div>
+        <a class="item" href="#">GitHub</a>
+    </div>
+</div>
+<div class="ui main text container">
+    <br>
+    <h1 class="ui header">使用JavaScripy动态添加表格内容</h1>
+    <p>2018/3/19</p>
+    <div class="ui two column stackable grid">
+        <div class="ui form  column">
+        <div class="field">
+            <label>Name</label>
+            <div class="one field">
+                <div class="field">
+                    <input type="text" id="name"  placeholder="First Name">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui form  column">
+        <div class="field">
+            <label>Password</label>
+            <div class="one field">
+                <div class="field">
+                    <input type="text" id="password" placeholder="Password">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="ui form  column">
+        <div class="field">
+            <label>Email</label>
+            <div class="one field">
+                <div class="field">
+                    <input type="text" id="email"  placeholder="Email">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="ui form  column">
+            <div class="field">
+                <label>birthday</label>
+                <div class="two fields">
+                    <div class="field">
+                        <select class="ui fluid search dropdown" id="month" name="card[expire-month]">
+                            <option value="">月份</option>
+                            <option value="1">一月</option>
+                            <option value="2">二月</option>
+                            <option value="3">三月</option>
+                            <option value="4">四月</option>
+                            <option value="5">五月</option>
+                            <option value="6">六月</option>
+                            <option value="7">七月</option>
+                            <option value="8">八月</option>
+                            <option value="9">九月</option>
+                            <option value="10">十月</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="card[expire-year]" id="year" maxlength="4" placeholder="Year">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui form  column">
+            <div class="field">
+                <label></label>
+
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" id="sex" onclick="changeSex()" value="女" >
+                    <label id="woman" style="display:inline;">女</label>
+                    <label id="man" style="display: none">男</label>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <button class=" ui button" onclick="add()">添加</button>
+            <button class=" ui button" onclick="reset()">重置</button>
+        </div>
+
+
+</div>
+    </form>
+</div>
+<div class="ui main text container">
+    <br>
+    <table class="ui compact celled definition table">
+        <thead>
+        <tr>
+
+            <th>Name</th>
+            <th>Password</th>
+            <th>E-mail</th>
+            <th>Birthday</th>
+            <th>Sex</th>
+            <th> <div class="ui small button">Delete </div></th>
+        </tr>
+        </thead>
+        <tbody id="tbMain">
+       <!-- <tr>
+
+            <td>约翰</td>
+            <td>2013年9月14日</td>
+            <td>jhlilk22@yahoo.com</td>
+            <td>否</td>
+            <td>男</td>
+            <td class="collapsing">
+                <div class="ui fitted slider checkbox">
+                    <input type="checkbox"> <label></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+
+            <td>杰米</td>
+            <td>2014年1月11日</td>
+            <td>jamieharingonton@yahoo.com</td>
+            <td>是</td>
+            <td>男</td>
+            <td class="collapsing">
+                <div class="ui fitted slider checkbox">
+                    <input type="checkbox"> <label></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+
+            <td>吉尔</td>
+            <td>2014年5月11日</td>
+            <td>jilsewris22@yahoo.com</td>
+            <td>是</td>
+            <td>男</td>
+            <td class="collapsing">
+                <div class="ui fitted slider checkbox">
+                    <input type="checkbox"> <label></label>
+                </div>
+            </td>
+        </tr>-->
+        </tbody>
+
+    </table>
+    <br>
+</div>
+
+<!--<script src="semantic.min.js"/>-->
+<!--<script src="jquery-3.2.1.min.js"/>-->
+<script>
+    //模拟一段JSON数据，实际要从数据库中读取
+    var per = [
+        {name:001,password:'张珊',email:'学生',birthday:"1221",sex:"nan"},
+        {name:001,password:'张珊',email:'学生',birthday:"1221",sex:"nan"},
+        {name:001,password:'张珊',email:'学生',birthday:"1221",sex:"nan"}
+    ];
+    var tbody = document.getElementById('tbMain');
+    var length=per.length-1;
+    for(var i = 0;i <= length; i++){ //遍历一下json数据
+        var trow = getDataRow(per[i]); //定义一个方法,返回tr数据
+        tbody.appendChild(trow);
+    }
+
+    function getDataRow(h){
+        var row = document.createElement('tr'); //创建行
+
+        var nameCell = document.createElement('td'); //创建第一列id
+        nameCell.innerHTML = h.name; //填充数据
+        row.appendChild(nameCell); //加入行  ，下面类似
+
+        var pwdCell = document.createElement('td');//创建第二列name
+        pwdCell.innerHTML = h.password;
+        row.appendChild(pwdCell);
+
+        var emailCell = document.createElement('td');//创建第三列job
+        emailCell.innerHTML = h.email;
+        row.appendChild(emailCell);
+
+        var birthdayCell = document.createElement('td');
+        birthdayCell.innerHTML = h.birthday;
+        row.appendChild(birthdayCell);
+
+        var sexCell = document.createElement('td');
+        sexCell.innerHTML = h.sex;
+        row.appendChild(sexCell);
+
+        //到这里，json中的数据已经添加到表格中，下面为每行末尾添加删除按钮
+
+        var chooseCell=document.createElement("td");
+        chooseCell.innerHTML=" <div class=\"ui fitted slider checkbox\">\n" +
+            "                    <input type=\"checkbox\"> <label></label>\n" +
+            "                </div>";
+        row.appendChild(chooseCell);
+
+
+        return row; //返回tr数据
+    }
+    var sex="";
+    var flag=true;
+    var i=0;
+    function add() {
+        var name=window.document.getElementById("name").value;
+        var password=window.document.getElementById("password").value;
+        var email=window.document.getElementById("email").value;
+        var myselect=window.document.getElementById("month");
+        var index=myselect.selectedIndex;
+        var birthday= myselect.options[index].text+window.document.getElementById("year").value;
+        var sex= window.document.getElementById("sex").value;
+        console.log(name+password+email+birthday+sex);
+
+        var arr  =
+            {
+                "name" : name,
+                "password" : password,
+                "email" : email,
+                "birthday" :birthday,
+                "sex" : sex
+            };
+
+        per.push(arr);
+
+        i++;
+        var trow = getDataRow(per[length+i]); //定义一个方法,返回tr数据
+        tbody.appendChild(trow);
+
+        /*var tab=window.document.getElementById("tab");
+        var newTr=tab.insertRow(1);
+        var nameId=newTr.insertCell(0);
+        var passwordId=newTr.insertCell(1);
+        var emailId=newTr.insertCell(2);
+        var birthdayId=newTr.insertCell(3);
+        var sexId=newTr.insertCell(4);
+        nameId.innerHTML=name;
+        passwordId.innerHTML=password;
+        emailId.innerHTML=email;
+        birthdayId.innerHTML=birthday;
+        sexId.innerHTML=sex;*/
+
+
+
+    }
+    function changeSex() {
+
+        if(flag){
+            window.document.getElementById("sex").value="男";
+            window.document.getElementById("man").style.display="inline";
+            window.document.getElementById("woman").style.display="none";
+            sex=window.document.getElementById("sex").value;
+            flag=false;
+        }else {
+            window.document.getElementById("sex").value="女";
+            window.document.getElementById("man").style.display="none";
+            window.document.getElementById("woman").style.display="inline";
+            sex=window.document.getElementById("sex").value;
+            flag=true;
+        }
+        console.log(sex)
+    }
+
+    function reset() {
+        window.document.getElementById("name").value="";
+        window.document.getElementById("password").value="";
+        window.document.getElementById("email").value="";
+        window.document.getElementById("month").value="";
+        window.document.getElementById("sex").value="";
+    }
+
+</script>
+</body>
+</html>
