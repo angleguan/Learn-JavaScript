@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../semantic.min.css">
+
+</head>
+<body>
+<div class="ui stackable  menu">
+    <div class="ui container">
+        <a href="#" class="header item">
+            Learn JavaScript
+        </a>
+        <a href="#" class="item">Home</a>
+        <div class="ui simple dropdown item">
+            Dropdown <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="#">Link Item</a>
+                <a class="item" href="#">Link Item</a>
+                <div class="divider"></div>
+                <div class="header">Header Item</div>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    Sub Menu
+                    <div class="menu">
+                        <a class="item" href="#">Link Item</a>
+                        <a class="item" href="#">Link Item</a>
+                    </div>
+                </div>
+                <a class="item" href="#">Link Item</a>
+
+            </div>
+
+        </div>
+        <div class="right menu">
+            <div class="ui basic animated button" tabindex="0">
+                <div class="visible content">Back</div>
+                <div class="hidden content">
+                    <i class="left chevron icon"></i>
+                </div>
+            </div>
+            <div class="ui basic animated button" tabindex="0">
+                <div class="visible content">Next</div>
+                <div class="hidden content">
+                    <i class="right arrow icon"></i>
+                </div>
+            </div>
+        </div>
+        <a class="item" href="#">GitHub</a>
+    </div>
+</div>
+<div class="ui main text container">
+    <br>
+    <h1 class="ui header">鼠标悬停改变中间块颜色</h1>
+    <p>2018/3/19</p>
+    <div class="ui inverted segment">
+        <button class="ui inverted red button" id="red" onmouseover="test(this)" onmouseout="AllDisplayNone()">Red</button>
+        <button class="ui inverted orange button" id="orange" onmouseover="test(this)" onmouseout="AllDisplayNone()">Orange</button>
+        <button class="ui inverted yellow button" id="yellow"onmouseover="test(this)" onmouseout="AllDisplayNone()">黄色</button>
+        <button class="ui inverted olive button" id="olive" onmouseover="test(this)" onmouseout="AllDisplayNone()">Olive</button>
+        <button class="ui inverted green button" id="green" onmouseover="test(this)" onmouseout="AllDisplayNone()">Green</button>
+        <button class="ui inverted teal button" id="teal" onmouseover="test(this)" onmouseout="AllDisplayNone()">Teal</button>
+        <button class="ui inverted blue button" id="blue" onmouseover="test(this)" onmouseout="AllDisplayNone()">Blue</button>
+        <button class="ui inverted violet button" id="violet" onmouseover="test(this)" onmouseout="AllDisplayNone()">紫罗兰色</button>
+        <button class="ui inverted purple button" id="purple" onmouseover="test(this)" onmouseout="AllDisplayNone()">紫色</button>
+        <button class="ui inverted pink button" id="pink" onmouseover="test(this)" onmouseout="AllDisplayNone()">粉色</button>
+        <button class="ui inverted brown button" id="brown" onmouseover="test(this)" onmouseout="AllDisplayNone()">褐色</button>
+        <button class="ui inverted grey button" id="grey" onmouseover="test(this)" onmouseout="AllDisplayNone()">灰色</button>
+        <button class="ui inverted black button" id="black" onmouseover="test(this)" onmouseout="AllDisplayNone()">Black</button>
+    </div>
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="red-b"
+             style="display:none;background: red" data-text="Netboard">
+        </div>
+
+    </div>
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="orange-b"
+             style="display:none;background: orange" data-text="Netboard">
+        </div>
+    </div>
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="yellow-b"
+             style="display:none;background: yellow" data-text="Netboard">
+        </div>
+    </div>
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="olive-b"
+             style="display:none;background: olive" data-text="Netboard">
+        </div>
+    </div>
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="green-b"
+             style="display:none;background: green" data-text="Netboard">
+        </div>
+    </div>
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="teal-b"
+             style="display:none;background: teal" data-text="Netboard">
+        </div>
+    </div>
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="blue-b"
+             style="display:none;background: blue" data-text="Netboard">
+        </div>
+    </div>
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="violet-b"
+             style="display:none;background: violet" data-text="Netboard">
+        </div>
+    </div>
+
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="purple-b"
+             style="display:none;background: purple" data-text="Netboard">
+        </div>
+    </div>
+
+
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="brown-b"
+             style="display:none;background: brown" data-text="Netboard">
+        </div>
+    </div>
+
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="grey-b"
+             style="display:none;background: grey" data-text="Netboard">
+        </div>
+    </div>
+
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="pink-b"
+             style="display:none;background: pink" data-text="Netboard">
+        </div>
+    </div>
+
+    <div class="ui  column ">
+        <div class="ui centered netboard  test ad "
+             id="black-b"
+             style="display:none;background: black">
+        </div>
+
+    </div>
+
+<br>
+    <br>
+</div>
+
+<script>
+    var red=document.getElementById("red-b");
+    var orange=document.getElementById("orange-b");
+    var yellow=document.getElementById("yellow-b");
+    var olive=document.getElementById("olive-b");
+    var green=document.getElementById("green-b");
+    var teal=document.getElementById("teal-b");
+    var blue=document.getElementById("blue-b");
+    var violet=document.getElementById("violet-b");
+    var purple=document.getElementById("purple-b");
+    var brown=document.getElementById("brown-b");
+    var grey=document.getElementById("grey-b");
+    var pink=document.getElementById("pink-b");
+    var black=document.getElementById("black-b");
+
+    function test(data) {
+        console.log(data.id);
+        var color=data.id;
+        AllDisplayNone();
+        if (color=="red"){
+            red.style.display="block";
+        }else if(color=="orange"){
+            orange.style.display="block";
+        }else if(color=="yellow"){
+            yellow.style.display="block";
+        }else if(color=="olive"){
+            olive.style.display="block";
+        }else if (color=="green"){
+            green.style.display="block";
+        }else if(color=="teal"){
+            teal.style.display="block";
+        }else if (color=="blue"){
+            blue.style.display="block";
+        }else if(color=="violet"){
+            violet.style.display="block";
+        }else if(color=="purple"){
+            purple.style.display="block";
+        }else if (color=="brown"){
+            brown.style.display="block";
+        }else if (color=="grey"){
+            grey.style.display="block";
+        }else if(color=="pink"){
+            pink.style.display="block";
+        }else if(color=="black"){
+            black.style.display="block";
+        }
+
+    }
+
+    function AllDisplayNone() {
+        red.style.display="none";
+        orange.style.display="none";
+        yellow.style.display="none";
+        olive.style.display="none";
+        green.style.display="none";
+        teal.style.display="none";
+        blue.style.display="none";
+        violet.style.display="none";
+        purple.style.display="none";
+        brown.style.display="none";
+        grey.style.display="none";
+        pink.style.display="none";
+        black.style.display="none";
+    }
+
+
+
+</script>
+</body>
+</html>
